@@ -49,8 +49,6 @@ h4 {
 }
 
 .page-header {
-  max-width: 1600px;
-  margin: 0 auto;
   font-weight: 500;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
@@ -243,6 +241,8 @@ h4 {
 }
 
 .team {
+  margin: 0 auto;
+  max-width: 1600px;
   padding: 94px 0;
   background-color: var(--background-color-secondary);
 }
@@ -292,7 +292,8 @@ h4 {
 }
 
 .team-social-link {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,13 +327,16 @@ h4 {
 }
 
 .clients-list > li {
-  min-width: 170px;
-  min-height: 92px;
+  width: 170px;
+  height: 92px;
 }
 
 .clients-link {
+  width: 100%;
+  height: 100%;
   display: flex;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
   color: var(--color-icons);
@@ -384,15 +388,16 @@ h4 {
   flex-wrap: wrap;
 }
 
-.portfolio-list-projects > li:hover,
-.portfolio-list-projects > li:focus {
+.projects-link,
+.projects-link > img {
+  display: block;
+}
+
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-link > img {
-  display: block;
 }
 
 .projects-title-description {
@@ -416,14 +421,13 @@ h4 {
 }
 
 .page-footer {
-  margin: 0 auto;
   padding: 66px 0 54px 0;
   background-color: var(--background-color-dark);
-  max-width: 1600px;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -464,10 +468,6 @@ h4 {
   color: var(--color-accent);
 }
 
-.footer-social {
-  padding-top: 12px;
-}
-
 .footer-social-text {
   margin-bottom: 20px;
   font-weight: 700;
@@ -490,7 +490,8 @@ h4 {
 }
 
 .footer-social-link {
-  padding: 12px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
